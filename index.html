@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══════════════════════════════════════════
+       SEO META TAGS
+  ═══════════════════════════════════════════ -->
+  <title>GamesHub Pro – Game Reviews, Guides & Tips</title>
+  <meta name="description" content="Explore expert game reviews, strategy guides, tips &amp; tricks, and trending mobile games. Your go-to source for honest gaming content." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="GamesHub Pro Editorial Team" />
+  <link rel="canonical" href="https://gameshubpro.com/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://gameshubpro.com/" />
+  <meta property="og:title"       content="GamesHub Pro – Game Reviews, Guides & Tips" />
+  <meta property="og:description" content="Expert game reviews, strategy guides, tips & tricks, and trending mobile games — all in one place." />
+  <meta property="og:image"       content="https://gameshubpro.com/og-image.jpg" />
+  <meta property="og:site_name"   content="GamesHub Pro" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="GamesHub Pro – Game Reviews, Guides & Tips" />
+  <meta name="twitter:description" content="Expert game reviews, strategy guides, tips & tricks, and trending mobile games." />
+  <meta name="twitter:image"       content="https://gameshubpro.com/og-image.jpg" />
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@700;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ═══════════════════════════════════════════
+       STRUCTURED DATA — WebSite + Organization
+  ═══════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://gameshubpro.com/#website",
+        "url": "https://gameshubpro.com/",
+        "name": "GamesHub Pro",
+        "description": "Expert game reviews, guides, tips, and trending mobile game coverage.",
+        "publisher": { "@id": "https://gameshubpro.com/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://gameshubpro.com/search?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://gameshubpro.com/#organization",
+        "name": "GamesHub Pro",
+        "url": "https://gameshubpro.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://gameshubpro.com/logo.png"
+        },
+        "sameAs": [
+          "https://twitter.com/gameshubpro",
+          "https://youtube.com/gameshubpro"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- ═══════════════════════════════════════════
+       STRUCTURED DATA — Featured Article (Review)
+  ═══════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Latest Game Reviews",
+    "url": "https://gameshubpro.com/reviews/",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Review",
+          "name": "Hungry Shark Evolution – Full Game Review",
+          "url": "https://gameshubpro.com/reviews/hungry-shark-evolution/",
+          "reviewRating": { "@type": "Rating", "ratingValue": "9.1", "bestRating": "10" },
+          "author": { "@type": "Person", "name": "Alex Mercer" },
+          "publisher": { "@type": "Organization", "name": "GamesHub Pro" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Review",
+          "name": "Real Racing 3 – Deep Dive Review",
+          "url": "https://gameshubpro.com/reviews/real-racing-3/",
+          "reviewRating": { "@type": "Rating", "ratingValue": "8.7", "bestRating": "10" },
+          "author": { "@type": "Person", "name": "Jordan Lee" },
+          "publisher": { "@type": "Organization", "name": "GamesHub Pro" }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Review",
+          "name": "Stumble Guys – Party Chaos Reviewed",
+          "url": "https://gameshubpro.com/reviews/stumble-guys/",
+          "reviewRating": { "@type": "Rating", "ratingValue": "8.4", "bestRating": "10" },
+          "author": { "@type": "Person", "name": "Priya Sharma" },
+          "publisher": { "@type": "Organization", "name": "GamesHub Pro" }
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ════════════════════════════════════════════
+       MOBILE NAV OVERLAY
+  ════════════════════════════════════════════ -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close navigation">✕</button>
+    <a href="/">Home</a>
+    <a href="/reviews/">Reviews</a>
+    <a href="/guides/">Guides</a>
+    <a href="/tips/">Tips &amp; Tricks</a>
+    <a href="/news/">News</a>
+    <a href="/compare/">Compare</a>
+    <a href="/tutorials/">Tutorials</a>
+  </nav>
+
+  <!-- ════════════════════════════════════════════
+       HEADER
+  ════════════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+
+        <!-- Logo -->
+        <a href="/" class="logo" aria-label="GamesHub Pro Home">
+          <div class="logo-icon" aria-hidden="true">🎮</div>
+          <span class="logo-text">GamesHub Pro</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/reviews/">Reviews</a></li>
+            <li><a href="/guides/">Guides</a></li>
+            <li><a href="/tips/">Tips &amp; Tricks</a></li>
+            <li><a href="/news/">News</a></li>
+            <li><a href="/compare/">Compare</a></li>
+            <li><a href="/tutorials/">Tutorials</a></li>
+          </ul>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <button class="search-btn" aria-label="Search">🔍</button>
+          <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ════════════════════════════════════════════
+       HERO SECTION
+  ════════════════════════════════════════════ -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero-content-grid">
+
+        <!-- Hero Text -->
+        <div class="hero-content">
+          <div class="hero-badge animate-fade-in">
+            <span class="hero-badge-dot"></span>
+            Updated February 2026
+          </div>
+
+          <h1 id="hero-heading" class="hero-title animate-fade-in delay-1">
+            Your Ultimate<br />
+            <span class="gradient-text">Gaming Universe</span>
+          </h1>
+
+          <p class="hero-desc animate-fade-in delay-2">
+            From in-depth game reviews and strategy guides to the latest mobile gaming trends —
+            GamesHub Pro is the trusted source for every kind of gamer.
+          </p>
+
+          <div class="hero-cta animate-fade-in delay-3">
+            <a href="/reviews/" class="btn btn-primary">
+              🎯 Explore Reviews
+            </a>
+            <a href="/guides/" class="btn btn-outline">
+              📖 Strategy Guides
+            </a>
+          </div>
+
+          <div class="hero-stats animate-fade-in delay-3">
+            <div class="stat-item">
+              <span class="stat-num">500<span>+</span></span>
+              <span class="stat-label">Game Reviews</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">1.2<span>M</span></span>
+              <span class="stat-label">Monthly Readers</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">8<span>+</span></span>
+              <span class="stat-label">Years of Coverage</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Floating Cards (Desktop) -->
+        <div class="hero-featured-cards" aria-hidden="true">
+          <div class="hero-card">
+            <div style="height:120px;background:linear-gradient(135deg,#1a0533,#0c1a2e);display:flex;align-items:center;justify-content:center;font-size:3rem;">🦈</div>
+            <div class="hero-card-body">
+              <h4>Hungry Shark Evolution</h4>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div style="height:120px;background:linear-gradient(135deg,#0c1a1a,#1a1000);display:flex;align-items:center;justify-content:center;font-size:3rem;">🏎️</div>
+            <div class="hero-card-body">
+              <h4>Real Racing 3</h4>
+              <div class="stars">★★★★½</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       FEATURED GAMES STRIP
+  ════════════════════════════════════════════ -->
+  <div class="featured-strip" aria-label="Currently featured games">
+    <div class="container">
+      <div class="strip-inner">
+        <span class="strip-label">🔥 Hot Right Now</span>
+        <div class="strip-divider"></div>
+        <div class="strip-games">
+          <div class="strip-game-item">
+            <span aria-hidden="true">🦈</span>
+            <span>Hungry Shark Evolution</span>
+          </div>
+          <div class="strip-game-item">
+            <span aria-hidden="true">🏎️</span>
+            <span>Real Racing 3</span>
+          </div>
+          <div class="strip-game-item">
+            <span aria-hidden="true">🏃</span>
+            <span>Temple Run 2</span>
+          </div>
+          <div class="strip-game-item">
+            <span aria-hidden="true">⚽</span>
+            <span>Score Hero</span>
+          </div>
+          <div class="strip-game-item">
+            <span aria-hidden="true">🦔</span>
+            <span>Sonic Dash</span>
+          </div>
+          <div class="strip-game-item">
+            <span aria-hidden="true">🤺</span>
+            <span>Mini Militia</span>
+          </div>
+          <div class="strip-game-item">
+            <span aria-hidden="true">🃏</span>
+            <span>Stumble Guys</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       LATEST GAME REVIEWS
+  ════════════════════════════════════════════ -->
+  <section id="reviews" aria-labelledby="reviews-heading">
+    <div class="container">
+
+      <header class="section-header">
+        <div class="section-label">Expert Reviews</div>
+        <h2 id="reviews-heading" class="section-title">Latest Game Reviews</h2>
+        <p class="section-sub">
+          Every review is written by players who have spent genuine time with the game.
+          No sponsored fluff — just honest, grounded coverage.
+        </p>
+      </header>
+
+      <!-- ══ STRUCTURED DATA — Review Cards ══ -->
+      <div class="reviews-grid">
+
+        <!-- Review 1: Hungry Shark Evolution -->
+        <article class="review-card reveal" itemscope itemtype="https://schema.org/Review">
+          <div class="review-card-img">
+            <div style="height:200px;background:linear-gradient(135deg,#1a0533 0%,#0c1a3e 50%,#0a2a1a 100%);display:flex;align-items:center;justify-content:center;font-size:5rem;" role="img" aria-label="Hungry Shark Evolution gameplay thumbnail">🦈</div>
+            <div class="review-score" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+              <meta itemprop="bestRating" content="10" />
+              <span itemprop="ratingValue">9.1</span>
+            </div>
+          </div>
+          <div class="review-card-body">
+            <div class="review-meta">
+              <span class="tag tag-purple">Action</span>
+              <span class="tag tag-cyan">Mobile</span>
+              <div class="stars" aria-label="4.5 out of 5 stars">★★★★½</div>
+            </div>
+            <h3 itemprop="name">
+              <a href="/reviews/hungry-shark-evolution/" itemprop="url">
+                Hungry Shark Evolution Review — Still Ruling the Deep in 2026
+              </a>
+            </h3>
+            <p class="review-excerpt" itemprop="reviewBody">
+              Few mobile games have shown this much staying power. Hungry Shark Evolution combines
+              addictive progression, vibrant underwater visuals, and genuinely satisfying gameplay
+              loops that keep players returning. We break down what makes it tick — and what could
+              still be better. Players after enhanced progression can explore the
+              <a href="https://hungrysharkevolutionmod.com/" rel="dofollow" class="partner-link">Hungry Shark Evolution MOD APK</a>
+              for an extended look at its unlockable content.
+            </p>
+            <div class="review-footer">
+              <div class="review-author">
+                <div class="author-avatar" aria-hidden="true">AM</div>
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                  <meta itemprop="name" content="Alex Mercer" />Alex Mercer
+                </span>
+              </div>
+              <a href="/reviews/hungry-shark-evolution/" class="read-more-link">Read Review →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Review 2: Real Racing 3 -->
+        <article class="review-card reveal" itemscope itemtype="https://schema.org/Review">
+          <div class="review-card-img">
+            <div style="height:200px;background:linear-gradient(135deg,#0c1a1a 0%,#1a1800 50%,#100010 100%);display:flex;align-items:center;justify-content:center;font-size:5rem;" role="img" aria-label="Real Racing 3 race track thumbnail">🏎️</div>
+            <div class="review-score" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+              <meta itemprop="bestRating" content="10" />
+              <span itemprop="ratingValue">8.7</span>
+            </div>
+          </div>
+          <div class="review-card-body">
+            <div class="review-meta">
+              <span class="tag tag-gold">Racing</span>
+              <span class="tag tag-cyan">Mobile</span>
+              <div class="stars" aria-label="4.5 out of 5 stars">★★★★½</div>
+            </div>
+            <h3 itemprop="name">
+              <a href="/reviews/real-racing-3/" itemprop="url">
+                Real Racing 3 Review — Console-Grade Racing in Your Pocket
+              </a>
+            </h3>
+            <p class="review-excerpt" itemprop="reviewBody">
+              Real Racing 3 remains one of the most technically impressive racing titles on mobile,
+              boasting licensed cars and photo-realistic tracks. Its time-shifted multiplayer mechanics
+              are unique, though the in-app economy can feel grindy. Fans of the franchise often look
+              at the <a href="https://realracing3modapk.site/" rel="dofollow" class="partner-link">real racing 3 mod apk</a>
+              versions to understand the game's full car roster before spending in-game currency.
+            </p>
+            <div class="review-footer">
+              <div class="review-author">
+                <div class="author-avatar" aria-hidden="true">JL</div>
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                  <meta itemprop="name" content="Jordan Lee" />Jordan Lee
+                </span>
+              </div>
+              <a href="/reviews/real-racing-3/" class="read-more-link">Read Review →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Review 3: Stumble Guys -->
+        <article class="review-card reveal" itemscope itemtype="https://schema.org/Review">
+          <div class="review-card-img">
+            <div style="height:200px;background:linear-gradient(135deg,#1a0a00 0%,#2a0014 50%,#001a2a 100%);display:flex;align-items:center;justify-content:center;font-size:5rem;" role="img" aria-label="Stumble Guys party game thumbnail">🃏</div>
+            <div class="review-score" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+              <meta itemprop="bestRating" content="10" />
+              <span itemprop="ratingValue">8.4</span>
+            </div>
+          </div>
+          <div class="review-card-body">
+            <div class="review-meta">
+              <span class="tag tag-purple">Party</span>
+              <span class="tag tag-cyan">Mobile</span>
+              <div class="stars" aria-label="4 out of 5 stars">★★★★☆</div>
+            </div>
+            <h3 itemprop="name">
+              <a href="/reviews/stumble-guys/" itemprop="url">
+                Stumble Guys Review — Pure Party Chaos Done Right
+              </a>
+            </h3>
+            <p class="review-excerpt" itemprop="reviewBody">
+              Stumble Guys takes the battle-royale party formula and strips it down to something
+              genuinely fun for everyone. Colourful obstacle courses, chaotic multiplayer rounds, and
+              a steady content update schedule make it hard to put down. Those exploring character
+              customisation and skins often reference the
+              <a href="https://sgproapk.com/" rel="dofollow" class="partner-link">Stumble Guys Mod APK</a>
+              community for in-depth looks at available cosmetics.
+            </p>
+            <div class="review-footer">
+              <div class="review-author">
+                <div class="author-avatar" aria-hidden="true">PS</div>
+                <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                  <meta itemprop="name" content="Priya Sharma" />Priya Sharma
+                </span>
+              </div>
+              <a href="/reviews/stumble-guys/" class="read-more-link">Read Review →</a>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /reviews-grid -->
+
+      <div style="text-align:center;margin-top:2.5rem;">
+        <a href="/reviews/" class="btn btn-outline">View All Reviews</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       TRENDING MOBILE GAMES
+  ════════════════════════════════════════════ -->
+  <section id="trending" class="trending-section" aria-labelledby="trending-heading">
+    <div class="container">
+
+      <header class="section-header">
+        <div class="section-label">📈 Trending Now</div>
+        <h2 id="trending-heading" class="section-title">Trending Mobile Games</h2>
+        <p class="section-sub">
+          The most-played, most-discussed mobile games on our platform right now —
+          ranked by reader engagement and editorial picks.
+        </p>
+      </header>
+
+      <div class="trending-grid">
+
+        <!-- Rank 1 -->
+        <div class="trending-item reveal">
+          <div class="trending-rank" aria-label="Rank 1">#1</div>
+          <div style="width:64px;height:64px;border-radius:8px;background:linear-gradient(135deg,#1a0533,#0c3020);display:flex;align-items:center;justify-content:center;font-size:2rem;flex-shrink:0;" role="img" aria-label="Hungry Shark Evolution icon">🦈</div>
+          <div class="trending-info">
+            <h3>Hungry Shark Evolution</h3>
+            <div class="stars" aria-label="4.5 stars">★★★★½</div>
+            <p>
+              A legendary survival game where you grow your shark by hunting prey across deep-sea
+              environments. Its vibrant world and constant updates keep the community thriving.
+              iOS fans can explore the
+              <a href="https://hungrysharkevolutionmod.com/hungry-shark-evolution-mod-apk-for-ios/" rel="dofollow" class="partner-link">Hungry Shark Evolution hack ios</a>
+              community guides for platform-specific tips.
+            </p>
+          </div>
+          <span class="trending-badge">🔥 Hot</span>
+        </div>
+
+        <!-- Rank 2 -->
+        <div class="trending-item reveal">
+          <div class="trending-rank" aria-label="Rank 2">#2</div>
+          <div style="width:64px;height:64px;border-radius:8px;background:linear-gradient(135deg,#001a0a,#001030);display:flex;align-items:center;justify-content:center;font-size:2rem;flex-shrink:0;" role="img" aria-label="Temple Run 2 icon">🏃</div>
+          <div class="trending-info">
+            <h3>Temple Run 2</h3>
+            <div class="stars" aria-label="4.5 stars">★★★★½</div>
+            <p>
+              The grandfather of mobile endless runners. Temple Run 2 introduced stunning visual
+              upgrades and remains one of the most downloaded mobile games of all time.
+              See our full breakdown at the
+              <a href="https://templerun2modapk.xyz/" rel="dofollow" class="partner-link">temple run 2 mod apk</a>
+              resource hub for character and power-up details.
+            </p>
+          </div>
+          <span class="trending-badge">📈 Rising</span>
+        </div>
+
+        <!-- Rank 3 -->
+        <div class="trending-item reveal">
+          <div class="trending-rank" aria-label="Rank 3">#3</div>
+          <div style="width:64px;height:64px;border-radius:8px;background:linear-gradient(135deg,#1a1000,#0a001a);display:flex;align-items:center;justify-content:center;font-size:2rem;flex-shrink:0;" role="img" aria-label="Score Hero icon">⚽</div>
+          <div class="trending-info">
+            <h3>Score Hero</h3>
+            <div class="stars" aria-label="4 stars">★★★★☆</div>
+            <p>
+              Score Hero turns football storytelling into bite-sized puzzle gameplay. Draw your path,
+              beat the keeper, rise through the leagues. Players seeking career-mode insight reference
+              <a href="https://scoreheromodapk.online/" rel="dofollow" class="partner-link">Score Hero MOD APK</a>
+              guides to plan progression strategies.
+            </p>
+          </div>
+          <span class="trending-badge">⚽ Sports Pick</span>
+        </div>
+
+        <!-- Rank 4 -->
+        <div class="trending-item reveal">
+          <div class="trending-rank" aria-label="Rank 4">#4</div>
+          <div style="width:64px;height:64px;border-radius:8px;background:linear-gradient(135deg,#001a20,#100020);display:flex;align-items:center;justify-content:center;font-size:2rem;flex-shrink:0;" role="img" aria-label="Sonic Dash icon">🦔</div>
+          <div class="trending-info">
+            <h3>Sonic Dash</h3>
+            <div class="stars" aria-label="4 stars">★★★★☆</div>
+            <p>
+              SEGA's iconic blue hedgehog sprints into mobile in a beautifully animated endless runner.
+              Sonic Dash balances accessibility with surprising depth through its upgrade tree.
+              Community resources like the
+              <a href="https://sonicdashmodapk.online/" rel="dofollow" class="partner-link">Sonic Dash MOD APK</a>
+              site document every character's unique abilities.
+            </p>
+          </div>
+          <span class="trending-badge">🎮 Classic</span>
+        </div>
+
+        <!-- Rank 5 -->
+        <div class="trending-item reveal">
+          <div class="trending-rank" aria-label="Rank 5">#5</div>
+          <div style="width:64px;height:64px;border-radius:8px;background:linear-gradient(135deg,#1a0010,#001020);display:flex;align-items:center;justify-content:center;font-size:2rem;flex-shrink:0;" role="img" aria-label="Mini Militia icon">🤺</div>
+          <div class="trending-info">
+            <h3>Mini Militia – Doodle Army 2</h3>
+            <div class="stars" aria-label="4 stars">★★★★☆</div>
+            <p>
+              Mini Militia's old-school 2D shooter formula still pulls in massive multiplayer crowds.
+              Simple controls, chaotic arena battles, and strong community support define its appeal.
+              Competitive players compare loadouts at the
+              <a href="http://minimilitiamodapk.online/" rel="dofollow" class="partner-link">Mini Militia Mod APK</a>
+              resource pages.
+            </p>
+          </div>
+          <span class="trending-badge">💥 Multiplayer</span>
+        </div>
+
+        <!-- Rank 6 -->
+        <div class="trending-item reveal">
+          <div class="trending-rank" aria-label="Rank 6">#6</div>
+          <div style="width:64px;height:64px;border-radius:8px;background:linear-gradient(135deg,#0a1a00,#1a1000);display:flex;align-items:center;justify-content:center;font-size:2rem;flex-shrink:0;" role="img" aria-label="Hungry Shark Evo icon">🌊</div>
+          <div class="trending-info">
+            <h3>Hungry Shark Evo — iOS Edition</h3>
+            <div class="stars" aria-label="4.5 stars">★★★★½</div>
+            <p>
+              The iOS version of Hungry Shark Evo offers a polished experience optimised for Apple
+              devices. It provides the same deep gameplay with platform-specific performance advantages.
+              Players curious about iOS-specific features visit
+              <a href="https://hungrysharkevolutionmod.com/hungry-shark-evolution-mod-apk-for-ios/" rel="dofollow" class="partner-link">Hungry Shark Evolution MOD ios</a>
+              for cross-platform comparisons.
+            </p>
+          </div>
+          <span class="trending-badge">🍎 iOS</span>
+        </div>
+
+      </div><!-- /trending-grid -->
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       STRATEGY GUIDES
+  ════════════════════════════════════════════ -->
+  <section id="guides" aria-labelledby="guides-heading">
+    <div class="container">
+
+      <header class="section-header">
+        <div class="section-label">📖 Strategy Guides</div>
+        <h2 id="guides-heading" class="section-title">Master Any Game</h2>
+        <p class="section-sub">
+          Written by players who have competed at a high level — these guides skip the fluff
+          and get straight to the tactical details that actually improve your game.
+        </p>
+      </header>
+
+      <div class="guides-grid">
+
+        <article class="guide-card reveal" itemscope itemtype="https://schema.org/Article">
+          <div class="guide-icon" aria-hidden="true">🦈</div>
+          <div class="guide-body">
+            <h3 itemprop="name">
+              <a href="/guides/hungry-shark-evolution-beginners-guide/" itemprop="url">
+                Hungry Shark Evolution: Beginner to Pro in 7 Days
+              </a>
+            </h3>
+            <p itemprop="description">
+              Starting out in Hungry Shark Evolution can feel overwhelming — dozens of sharks, hidden
+              creatures, and complex environments. This guide walks you through early-game shark
+              selection, feeding priorities, and how to reach the top predators fastest. Readers also
+              widely reference the
+              <a href="https://hungrysharkevolutionmod.com/" rel="dofollow" class="partner-link">Hungry Shark MOD APK</a>
+              pages for detailed species breakdowns that complement our strategy tips.
+            </p>
+            <div class="guide-meta">
+              <span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Alex Mercer" />Alex Mercer</span>
+              <span class="guide-meta-sep">•</span>
+              <span>12 min read</span>
+              <span class="guide-meta-sep">•</span>
+              <span class="tag tag-purple">Beginner</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="guide-card reveal" itemscope itemtype="https://schema.org/Article">
+          <div class="guide-icon" aria-hidden="true">🏎️</div>
+          <div class="guide-body">
+            <h3 itemprop="name">
+              <a href="/guides/real-racing-3-car-upgrade-guide/" itemprop="url">
+                Real Racing 3: Optimal Car Upgrade Path Guide
+              </a>
+            </h3>
+            <p itemprop="description">
+              Not all upgrades are created equal in Real Racing 3. This guide breaks down which tuning
+              options give the best performance delta for each car class, helping you spend gold
+              efficiently and climb the leaderboards without burning real currency. The full car
+              database referenced here is also catalogued at
+              <a href="https://realracing3modapk.site/" rel="dofollow" class="partner-link">real racing 3 mod apk</a>
+              fan sites for specification comparisons.
+            </p>
+            <div class="guide-meta">
+              <span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Jordan Lee" />Jordan Lee</span>
+              <span class="guide-meta-sep">•</span>
+              <span>9 min read</span>
+              <span class="guide-meta-sep">•</span>
+              <span class="tag tag-gold">Advanced</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="guide-card reveal" itemscope itemtype="https://schema.org/Article">
+          <div class="guide-icon" aria-hidden="true">🏃</div>
+          <div class="guide-body">
+            <h3 itemprop="name">
+              <a href="/guides/temple-run-2-high-score-guide/" itemprop="url">
+                Temple Run 2: How to Get Your First 10 Million Score
+              </a>
+            </h3>
+            <p itemprop="description">
+              Reaching 10 million in Temple Run 2 requires more than quick reflexes — it demands
+              knowing which power-ups to max first, which characters offer the best utility, and how
+              coin magnets stack. This guide covers everything, backed by high-score community data.
+              Community-maintained databases at
+              <a href="https://templerun2modapk.xyz/" rel="dofollow" class="partner-link">temple run 2 mod apk</a>
+              offer supplementary data on power-up stacking.
+            </p>
+            <div class="guide-meta">
+              <span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Daniel Wu" />Daniel Wu</span>
+              <span class="guide-meta-sep">•</span>
+              <span>8 min read</span>
+              <span class="guide-meta-sep">•</span>
+              <span class="tag tag-cyan">Intermediate</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="guide-card reveal" itemscope itemtype="https://schema.org/Article">
+          <div class="guide-icon" aria-hidden="true">🃏</div>
+          <div class="guide-body">
+            <h3 itemprop="name">
+              <a href="/guides/stumble-guys-win-every-round/" itemprop="url">
+                Stumble Guys: Positioning Secrets to Win Every Round
+              </a>
+            </h3>
+            <p itemprop="description">
+              Stumble Guys may look random, but positioning is everything. This guide breaks down map
+              awareness, when to let others fall first, and how to read obstacle patterns before they
+              appear on screen. It's the closest thing to a reliable formula in a chaotic game.
+              Players passionate about Stumble Guys cosmetics often visit
+              <a href="https://sgproapk.com/" rel="dofollow" class="partner-link">Stumble Guys Mod APK</a>
+              for skin availability data.
+            </p>
+            <div class="guide-meta">
+              <span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Priya Sharma" />Priya Sharma</span>
+              <span class="guide-meta-sep">•</span>
+              <span>7 min read</span>
+              <span class="guide-meta-sep">•</span>
+              <span class="tag tag-purple">Beginner</span>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /guides-grid -->
+
+      <div style="text-align:center;margin-top:2rem;">
+        <a href="/guides/" class="btn btn-outline">Browse All Guides</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       GAME COMPARISON TABLE
+  ════════════════════════════════════════════ -->
+  <section id="compare" class="comparison-section" aria-labelledby="compare-heading">
+    <div class="container">
+
+      <header class="section-header">
+        <div class="section-label">⚖️ Compare</div>
+        <h2 id="compare-heading" class="section-title">Top Mobile Games Compared</h2>
+        <p class="section-sub">
+          Feature-by-feature breakdown of the most popular mobile titles — helping you
+          decide what to download next.
+        </p>
+      </header>
+
+      <div class="comparison-table-wrap reveal">
+        <table class="comparison-table" aria-label="Game comparison table">
+          <thead>
+            <tr>
+              <th scope="col">Game</th>
+              <th scope="col">Genre</th>
+              <th scope="col">Rating</th>
+              <th scope="col">Offline Play</th>
+              <th scope="col">Multiplayer</th>
+              <th scope="col">Free to Start</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="game-name-cell">
+                  <span role="img" aria-label="shark" style="font-size:1.3rem;">🦈</span>
+                  Hungry Shark Evolution
+                </div>
+              </td>
+              <td><span class="tag tag-purple">Action</span></td>
+              <td><strong>9.1 / 10</strong></td>
+              <td class="check-icon" aria-label="Yes">✔</td>
+              <td class="cross-icon" aria-label="No">✘</td>
+              <td class="check-icon" aria-label="Yes">✔</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="game-name-cell">
+                  <span role="img" aria-label="racing car" style="font-size:1.3rem;">🏎️</span>
+                  Real Racing 3
+                </div>
+              </td>
+              <td><span class="tag tag-gold">Racing</span></td>
+              <td><strong>8.7 / 10</strong></td>
+              <td class="cross-icon" aria-label="No">✘</td>
+              <td class="check-icon" aria-label="Yes">✔</td>
+              <td class="check-icon" aria-label="Yes">✔</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="game-name-cell">
+                  <span role="img" aria-label="runner" style="font-size:1.3rem;">🏃</span>
+                  Temple Run 2
+                </div>
+              </td>
+              <td><span class="tag tag-cyan">Runner</span></td>
+              <td><strong>8.5 / 10</strong></td>
+              <td class="check-icon" aria-label="Yes">✔</td>
+              <td class="cross-icon" aria-label="No">✘</td>
+              <td class="check-icon" aria-label="Yes">✔</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="game-name-cell">
+                  <span role="img" aria-label="soccer ball" style="font-size:1.3rem;">⚽</span>
+                  Score Hero
+                </div>
+              </td>
+              <td><span class="tag tag-gold">Sports</span></td>
+              <td><strong>8.2 / 10</strong></td>
+              <td class="check-icon" aria-label="Yes">✔</td>
+              <td class="cross-icon" aria-label="No">✘</td>
+              <td class="check-icon" aria-label="Yes">✔</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="game-name-cell">
+                  <span role="img" aria-label="hedgehog" style="font-size:1.3rem;">🦔</span>
+                  Sonic Dash
+                </div>
+              </td>
+              <td><span class="tag tag-purple">Runner</span></td>
+              <td><strong>8.1 / 10</strong></td>
+              <td class="check-icon" aria-label="Yes">✔</td>
+              <td class="cross-icon" aria-label="No">✘</td>
+              <td class="check-icon" aria-label="Yes">✔</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="game-name-cell">
+                  <span role="img" aria-label="fighter" style="font-size:1.3rem;">🤺</span>
+                  Mini Militia
+                </div>
+              </td>
+              <td><span class="tag tag-cyan">Shooter</span></td>
+              <td><strong>7.9 / 10</strong></td>
+              <td class="check-icon" aria-label="Yes">✔</td>
+              <td class="check-icon" aria-label="Yes">✔</td>
+              <td class="check-icon" aria-label="Yes">✔</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       TIPS & TRICKS
+  ════════════════════════════════════════════ -->
+  <section id="tips" aria-labelledby="tips-heading">
+    <div class="container">
+
+      <header class="section-header centered">
+        <div class="section-label">💡 Tips & Tricks</div>
+        <h2 id="tips-heading" class="section-title">Level Up Faster</h2>
+        <p class="section-sub">
+          Quick, practical tips vetted by our editorial team — the kind you won't find
+          plastered across a hundred other gaming blogs.
+        </p>
+      </header>
+
+      <div class="tips-grid">
+
+        <div class="tip-card reveal">
+          <div class="tip-number" aria-hidden="true">01</div>
+          <h3>Prioritise Daily Missions</h3>
+          <p>
+            In virtually every free-to-play mobile game, daily missions provide the
+            best currency-to-time ratio. Always complete them before heading into
+            ranked or advanced content.
+          </p>
+        </div>
+
+        <div class="tip-card reveal">
+          <div class="tip-number" aria-hidden="true">02</div>
+          <h3>Understand the Upgrade Tree</h3>
+          <p>
+            Blind upgrading is the number-one mistake beginners make. Read our
+            per-game upgrade guides to understand which stats scale best for your
+            playstyle. Speed isn't always king.
+          </p>
+        </div>
+
+        <div class="tip-card reveal">
+          <div class="tip-number" aria-hidden="true">03</div>
+          <h3>Hungry Shark: Feed Aggressively Early</h3>
+          <p>
+            In <a href="https://hungrysharkevolutionmod.com/" rel="dofollow" class="partner-link">Hungry Shark Evo MOD APK</a>
+            guides, experienced players recommend using the first 90 seconds purely to
+            build your boost meter — this sets up longer survival windows for
+            hunting bigger prey.
+          </p>
+        </div>
+
+        <div class="tip-card reveal">
+          <div class="tip-number" aria-hidden="true">04</div>
+          <h3>Use Wi-Fi to Pre-Download Assets</h3>
+          <p>
+            Games like Real Racing 3 and Sonic Dash stream high-quality assets.
+            Downloading them over Wi-Fi before gameplay sessions prevents stutters
+            and reduces in-session data usage significantly.
+          </p>
+        </div>
+
+        <div class="tip-card reveal">
+          <div class="tip-number" aria-hidden="true">05</div>
+          <h3>Master the Gravity Boost (Temple Run 2)</h3>
+          <p>
+            Temple Run 2's coin boost zones are most valuable when combined with the
+            coin magnet power-up. Activate the magnet before entering a dense section
+            for a score multiplier chain that scales explosively.
+          </p>
+        </div>
+
+        <div class="tip-card reveal">
+          <div class="tip-number" aria-hidden="true">06</div>
+          <h3>Learn Map Rotations in Stumble Guys</h3>
+          <p>
+            Stumble Guys cycles maps on a weekly rotation. Knowing which maps are
+            active lets you practice specific obstacle patterns. Community trackers
+            post current rotations in real-time on the
+            <a href="https://sgproapk.com/" rel="dofollow" class="partner-link">Stumble Guys Mod APK</a>
+            forums.
+          </p>
+        </div>
+
+      </div><!-- /tips-grid -->
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       BEGINNER TUTORIALS
+  ════════════════════════════════════════════ -->
+  <section id="tutorials" class="tutorial-section" aria-labelledby="tutorials-heading">
+    <div class="container">
+
+      <header class="section-header">
+        <div class="section-label">🎓 Tutorials</div>
+        <h2 id="tutorials-heading" class="section-title">Beginner Tutorials</h2>
+        <p class="section-sub">
+          Brand new to mobile gaming? Start here. These step-by-step tutorials are
+          designed for players who've never touched these titles before.
+        </p>
+      </header>
+
+      <div class="tutorial-list">
+
+        <a href="/tutorials/how-to-start-hungry-shark-evolution/" class="tutorial-item reveal">
+          <div class="tutorial-step" aria-label="Step 1">01</div>
+          <div class="tutorial-info">
+            <h3>Getting Started with Hungry Shark Evolution</h3>
+            <p>Learn the basic controls, your first shark, and how the hunger mechanic actually works.</p>
+          </div>
+          <span class="tutorial-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="/tutorials/real-racing-3-first-race-guide/" class="tutorial-item reveal">
+          <div class="tutorial-step" aria-label="Step 2">02</div>
+          <div class="tutorial-info">
+            <h3>Your First Race in Real Racing 3</h3>
+            <p>Steering assist, braking lines, and what those little icons under your car actually mean.</p>
+          </div>
+          <span class="tutorial-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="/tutorials/temple-run-2-controls-for-beginners/" class="tutorial-item reveal">
+          <div class="tutorial-step" aria-label="Step 3">03</div>
+          <div class="tutorial-info">
+            <h3>Temple Run 2 Controls Explained for Beginners</h3>
+            <p>Swipe directions, tilting, and why you keep falling at the same turns — solved.</p>
+          </div>
+          <span class="tutorial-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="/tutorials/score-hero-drawing-mechanic/" class="tutorial-item reveal">
+          <div class="tutorial-step" aria-label="Step 4">04</div>
+          <div class="tutorial-info">
+            <h3>Mastering Score Hero's Draw-to-Shoot Mechanic</h3>
+            <p>The drawing mechanic is unique. This tutorial shows you how to curve shots and beat keepers.</p>
+          </div>
+          <span class="tutorial-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="/tutorials/sonic-dash-character-unlock-guide/" class="tutorial-item reveal">
+          <div class="tutorial-step" aria-label="Step 5">05</div>
+          <div class="tutorial-info">
+            <h3>How to Unlock Characters in Sonic Dash</h3>
+            <p>From Sonic to Tails — the fastest, cheapest ways to unlock every playable character.</p>
+          </div>
+          <span class="tutorial-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a href="/tutorials/mini-militia-controls-weapons-101/" class="tutorial-item reveal">
+          <div class="tutorial-step" aria-label="Step 6">06</div>
+          <div class="tutorial-info">
+            <h3>Mini Militia — Controls, Weapons & Your First Match</h3>
+            <p>Joystick layout, weapon types, and the three most effective beginner strategies in arena mode.</p>
+          </div>
+          <span class="tutorial-arrow" aria-hidden="true">→</span>
+        </a>
+
+      </div><!-- /tutorial-list -->
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       GAMING NEWS
+  ════════════════════════════════════════════ -->
+  <section id="news" aria-labelledby="news-heading">
+    <div class="container">
+
+      <header class="section-header">
+        <div class="section-label">📰 News</div>
+        <h2 id="news-heading" class="section-title">Latest Gaming News</h2>
+        <p class="section-sub">
+          Stay informed with our editorial team's takes on the biggest developments
+          in mobile and casual gaming.
+        </p>
+      </header>
+
+      <div class="news-grid">
+
+        <article class="news-card reveal" itemscope itemtype="https://schema.org/NewsArticle">
+          <div class="news-card-img">
+            <div style="width:110px;height:100%;background:linear-gradient(135deg,#1a0533,#0c1a3e);display:flex;align-items:center;justify-content:center;font-size:2.5rem;" role="img" aria-label="Hungry Shark news">🦈</div>
+          </div>
+          <div class="news-card-body">
+            <p class="news-date"><time datetime="2026-02-20" itemprop="datePublished">Feb 20, 2026</time></p>
+            <h3 itemprop="headline">
+              <a href="/news/hungry-shark-evolution-2026-update/" itemprop="url">
+                Hungry Shark Evolution Gets Major Biome Expansion
+              </a>
+            </h3>
+            <p itemprop="description">
+              Ubisoft dropped a surprise update introducing three entirely new biomes.
+              The deep volcanic zone changes the survival loop in ways the community is still
+              debating. Fans tracking the update also reference the
+              <a href="https://hungrysharkevolutionmod.com/" rel="dofollow" class="partner-link">Hungry Shark MOD APK</a>
+              changelog threads for a full feature list.
+            </p>
+          </div>
+        </article>
+
+        <article class="news-card reveal" itemscope itemtype="https://schema.org/NewsArticle">
+          <div class="news-card-img">
+            <div style="width:110px;height:100%;background:linear-gradient(135deg,#1a1000,#0a001a);display:flex;align-items:center;justify-content:center;font-size:2.5rem;" role="img" aria-label="Sonic Dash news">🦔</div>
+          </div>
+          <div class="news-card-body">
+            <p class="news-date"><time datetime="2026-02-17" itemprop="datePublished">Feb 17, 2026</time></p>
+            <h3 itemprop="headline">
+              <a href="/news/sonic-dash-new-seasonal-event/" itemprop="url">
+                Sonic Dash Launches Spring Sprint Seasonal Event
+              </a>
+            </h3>
+            <p itemprop="description">
+              SEGA's Spring Sprint event brings limited-edition skins, new high-score challenges,
+              and bonus ring multipliers for two weeks. Community resources at the
+              <a href="https://sonicdashmodapk.online/" rel="dofollow" class="partner-link">Sonic Dash MOD APK</a>
+              hub document how event rewards stack with regular unlocks.
+            </p>
+          </div>
+        </article>
+
+        <article class="news-card reveal" itemscope itemtype="https://schema.org/NewsArticle">
+          <div class="news-card-img">
+            <div style="width:110px;height:100%;background:linear-gradient(135deg,#001020,#1a0a00);display:flex;align-items:center;justify-content:center;font-size:2.5rem;" role="img" aria-label="Mini Militia news">🤺</div>
+          </div>
+          <div class="news-card-body">
+            <p class="news-date"><time datetime="2026-02-14" itemprop="datePublished">Feb 14, 2026</time></p>
+            <h3 itemprop="headline">
+              <a href="/news/mini-militia-clan-wars-update/" itemprop="url">
+                Mini Militia Introduces Clan Wars Mode in Latest Patch
+              </a>
+            </h3>
+            <p itemprop="description">
+              The Clan Wars mode brings a new layer of competition to Mini Militia's multiplayer
+              arenas — weekly brackets, exclusive weapon skins, and clan leaderboards. Strategic analyses
+              of the patch are available on the
+              <a href="http://minimilitiamodapk.online/" rel="dofollow" class="partner-link">Mini Militia Mod APK</a>
+              community boards.
+            </p>
+          </div>
+        </article>
+
+      </div><!-- /news-grid -->
+
+      <div style="text-align:center;margin-top:2rem;">
+        <a href="/news/" class="btn btn-outline">All News</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       NEWSLETTER
+  ════════════════════════════════════════════ -->
+  <section class="newsletter-section" aria-labelledby="newsletter-heading">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="section-label" style="display:inline-block;margin-bottom:1rem;">📬 Newsletter</div>
+        <h2 id="newsletter-heading">Get Weekly Game Picks</h2>
+        <p>
+          Every Sunday we send a curated list of the week's best reviews, top guides,
+          and the one game worth downloading. No spam, unsubscribe any time.
+        </p>
+        <form class="newsletter-form" action="/subscribe/" method="post" aria-label="Newsletter sign up">
+          <input
+            type="email"
+            name="email"
+            placeholder="your@email.com"
+            required
+            aria-label="Email address"
+            autocomplete="email"
+          />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        <p class="newsletter-note">No spam. Unsubscribe with one click. We respect your privacy.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- About -->
+        <div class="footer-about">
+          <a href="/" class="logo" aria-label="GamesHub Pro">
+            <div class="logo-icon" aria-hidden="true">🎮</div>
+            <span class="logo-text">GamesHub Pro</span>
+          </a>
+          <p>
+            GamesHub Pro is an independent gaming editorial platform publishing honest reviews,
+            in-depth guides, and news for mobile and casual gamers worldwide since 2018.
+          </p>
+        </div>
+
+        <!-- Reviews Links -->
+        <div class="footer-col">
+          <h4>Reviews</h4>
+          <ul class="footer-links">
+            <li><a href="/reviews/real-racing-3/">Real Racing 3</a></li>
+            <li><a href="/reviews/temple-run-2/">Temple Run 2</a></li>
+            <li><a href="/reviews/score-hero/">Score Hero</a></li>
+            <li><a href="/reviews/sonic-dash/">Sonic Dash</a></li>
+            <li><a href="/reviews/mini-militia/">Mini Militia</a></li>
+          </ul>
+        </div>
+
+        <!-- Guides Links -->
+        <div class="footer-col">
+          <h4>Guides</h4>
+          <ul class="footer-links">
+            <li><a href="/guides/">All Guides</a></li>
+            <li><a href="/tutorials/">Beginner Tutorials</a></li>
+            <li><a href="/tips/">Tips &amp; Tricks</a></li>
+            <li><a href="/compare/">Game Comparisons</a></li>
+            <li><a href="/news/">Gaming News</a></li>
+          </ul>
+        </div>
+
+        <!-- About Links -->
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul class="footer-links">
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/editorial-policy/">Editorial Policy</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms of Use</a></li>
+            <li><a href="/sitemap.xml">Sitemap</a></li>
+          </ul>
+        </div>
+
+      </div><!-- /footer-grid -->
+
+      <div class="footer-bottom">
+        <p>© 2026 GamesHub Pro. All opinions are our own. We do not endorse or promote software piracy.</p>
+        <div class="footer-bottom-links">
+          <a href="/privacy-policy/">Privacy</a>
+          <a href="/terms/">Terms</a>
+          <a href="/sitemap.xml">Sitemap</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ════════════════════════════════════════════
+       MINIMAL JAVASCRIPT — Mobile Menu & Scroll Reveal
+  ════════════════════════════════════════════ -->
+  <script>
+    // Mobile Menu Toggle
+    const menuBtn   = document.getElementById('mobileMenuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    const closeBtn  = document.getElementById('mobileNavClose');
+
+    menuBtn.addEventListener('click', () => {
+      mobileNav.classList.add('open');
+      menuBtn.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    });
+
+    function closeMenu() {
+      mobileNav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    closeBtn.addEventListener('click', closeMenu);
+    mobileNav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+
+    // Scroll Reveal (Intersection Observer)
+    const revealEls = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      revealEls.forEach(el => io.observe(el));
+    } else {
+      // Fallback for older browsers
+      revealEls.forEach(el => el.classList.add('revealed'));
+    }
+  </script>
+
+</body>
+</html>
